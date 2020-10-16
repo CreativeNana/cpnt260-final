@@ -38,69 +38,49 @@
         </ul>
       </header>
 
+
       <div class="mwrapper">
         <section>
           <div>
-          <h1>Log In</h1>
-          <p> Hello, friends! Let's start your journey with us.</p>
+          <h1>Login</h1>
+          <p> Hello, Let's start your journey with us</p>
 
           <div class="flex_wrap">
-
-              <form action="#">
-                  <fieldset>
-                    <legend>Please sign in</legend>
-                    <div class="social-container">
-                      <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                      <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                      <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <span>or use your account</span>
-
-                      <div class="flex_wrap2">
-                        <label for="email">E-mail: <abbr title="required" aria-label="required"></abbr></label>
-                        <input type="text" id="email" class="input-control" name="email" placeholder="Please enter your email" required>
-                      </div>
-                
-                      <div class="flex_wrap2">
-                        <label for="password">Password: <abbr title="required" aria-label="required"></abbr></label>
-                         <input type="text" id="password"  class="input-control" name="password" placeholder="Please enter your password" required>
-                      </div>
-
-                      <div class="flex_wrap3">
-                        <button onclick="">Sign In</button>    <button id="signUp">Sign Up</button>
-                      </div>
-                  </fieldset>
+            <form action="" method="post">
+              <fieldset>
+                <legend>Please sign in</legend>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-              </form>
+                <span>or use your account</span>
+          
+                <div class="form-group">
+                  <label for="email">E-mail<h>*</h>:</label>
+                   <input type="text" id="email"  class="input-control" name="email" placeholder="Please enter your E-mail address" required>
+                </div>
+    
+                <div class="form-group">
+                  <label for="password">Password<h>*</h>:</label>
+                   <input type="text" id="password"  class="input-control" name="password" placeholder="Please enter your password" required>
+                </div>
+    
+                <div>
+                  <button type="button" onclick="" id="signIn" class="c_button">Sign In</button> 
+                  <button type="button" id="signUp" class="c_button" href="register.html"> Sign Up</button>
+                </div>
+             </fieldset>
+            </form>
 
           </div>
         </section>
       </div>
-    
-      <footer class="footer">
-        <script>document.write(new Date().getFullYear());</script> @ CreativeNana
-      </footer>
 
 
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      function SetPageView() {
-
-      }       
-  
-      function SetPageControl() {
-        $('#signUp').click(function(){
-          document.location.href = "register.html";
-        });
-
-      }     
-  
-      window.onload = function() {
-         SetPageView();
-         SetPageControl();
-
-      }
-    </script>
+    <footer class="footer">
+      <script>document.write(new Date().getFullYear());</script> @ CreativeNana
+    </footer>
+  </div>
 </body>
 </html>

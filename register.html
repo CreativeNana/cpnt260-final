@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   </head>
   
+  
   <body>
     <div class="wrapper full-vh hero-image">
       <!-- Primary global navigation menus -->
@@ -46,31 +47,29 @@
           <p> Hello, Let's start your journey with us</p>
 
           <div class="flex_wrap">
-
-              <form action="#">
-                  <fieldset>
-
-                      <div class="flex_wrap2">
-                        <label for="email">E-mail<h6>*</h6> <abbr title="required" aria-label="required"></abbr></label>
-                        <input type="text" id="email" class="input-control" name="email" placeholder="Please enter your email" required>
-                      </div>
-                
-                      <div class="flex_wrap2">
-                        <label for="password">Password<h6>*</h6> <abbr title="required" aria-label="required"></abbr></label>
-                         <input type="text" id="password"  class="input-control" name="password" placeholder="Please enter your password" required>
-                      </div>
-
-                      <div class="flex_wrap2">
-                        <label for="confirmpassword">Password<h6>*</h6> <abbr title="required" aria-label="required"></abbr></label>
-                         <input type="text" id="confirmpassword"  class="input-control" name="confirmpassword" placeholder="Please enter your password" required>
-                      </div>
-
-                      <div>
-                        <button onclick="">Sign Up</button>
-                      </div>
-                  </fieldset>
+            <form action="" method="post">
+              <fieldset>
+         
+                <div class="form-group">
+                  <label for="email">E-mail<h>*</h>:</label>
+                   <input type="text" id="email"  class="input-control" name="email" placeholder="Please enter your E-mail address" required>
                 </div>
-              </form>
+    
+                <div class="form-group">
+                  <label for="password">Password<h>*</h>:</label>
+                   <input type="text" id="password"  class="input-control" name="password" placeholder="Please enter your password" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password<h>*</h>:</label>
+                   <input type="text" id="password"  class="input-control" name="password" placeholder="Please confirm your password" required>
+                </div>
+
+                <div>
+                  <button type="button" id="signUp" class="c_button">Sign Up</button>
+                </div>
+             </fieldset>
+            </form>
 
           </div>
         </section>

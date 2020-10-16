@@ -110,12 +110,7 @@
   .hero-image {
     background-size: 100%  50%;
     background-position: center top;
-  }
-    
-   .wrapper {
-    min-height: 100vh;
-  } 
-  
+  }  
   
   /* Set contents position */
   .mwrapper section {
@@ -174,11 +169,6 @@
     background-position: center top;
   }
     
-   .wrapper {
-    min-height: 80vh;
-  } 
-  
-  
   /* Set contents position */
   .mwrapper section {
     display:flex;

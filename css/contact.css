@@ -1,6 +1,6 @@
 
  .hero-image {
-  background-size: 100%  50%;
+  background-size: 100%  40vh;
   background-position: center top;
 }
   
@@ -11,6 +11,7 @@
 
   width: 100%;
   min-height: 100vh;
+  margin: 0;
 } 
 
 .mwrapper_hero {
@@ -22,7 +23,6 @@
   margin-top: 10px;
   margin-bottom: 50px;
   text-align: center;
-
 }
 
 /* Set contents position */
@@ -30,8 +30,6 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  margin: 30px;
 }
 
 /* Decorate the brand name */
@@ -104,14 +102,13 @@
 .flex_wrap_item footer ul {
   list-style-type: none;
 
-  margin-top: 0.7em;
-  margin-bottom: 0.7em;
+  margin-top: .5em;
+  margin-bottom: .5em;
 
   /* Provides the same gap between social media icons in the footer area */
   display: flex;
   flex-grow: 1;
   justify-content: space-evenly;
-  
   align-items: center;
 }
 
@@ -119,7 +116,7 @@
   text-align: center;
   font-size: 2em;
   color: rgb(27, 27, 110);
-}
+s}
 
 /* Release background image */
 .con_background_image {
@@ -138,9 +135,6 @@
   background-size: cover;
 }
 
-
-
-
 /* Decorate the inviting message */
 p {
   font-family: 'Roboto', sans-serif;
@@ -150,22 +144,10 @@ p {
   margin: 1em;
   text-align: center;
 }
- 
-legend {
-  flex: none;
-  display: block;
 
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  color: skyblue;
-  font-size: larger;
 
-  margin: 0.5em;
-}
-
-abbr {
-  font-size: smaller;
-  color: transparent;
+h {
+  color: red;
 }
 
 /* Fieldset border reset */
@@ -178,6 +160,19 @@ form {
   background-color: black;
   opacity: 70%;
 }
+ 
+legend {
+  flex: none;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: skyblue;
+  font-size: larger;
+
+  margin: 0.5em;
+}
 
 /* form specific formatting */
 .form-group {
@@ -189,7 +184,7 @@ form {
   font-size: 0.8em;
   font-weight: lighter; 
   padding-left: 5px;
-  padding-right: 10px;
+  padding-right: 5px;
 }
  
 .form-group label {
@@ -197,27 +192,19 @@ form {
   display: block;
 
   color: white;
-
   size: 15ch;
-
   margin: 0.5em;
 }
 
 .form-group input {
-
-  width: 30ch;
-
+  width: 35ch;
   color: black;
-
   margin: 0.5em;
 }
 
 .form-group textarea {
-
-  width: 30ch;
-
+  width: 35ch;
   color: black;
-
   margin: 0.5em;
 }
 
@@ -227,103 +214,53 @@ form {
 
    margin-top: 10px; 
    margin-bottom: 10px;
-   margin-right: 8px;
    padding: 4px;
 
-   max-width: 30ch;
+   max-width: 35ch;
 }
 
-.form-group input {
-  flex: none;
-  display: block;
-
-  max-width: 30ch;
+/* Submit button */
+.c_button {
+  background-color: goldenrod;
+  border-radius: 5%;
+  border: 1px solid rgb(2, 27, 27);
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
 
   color: black;
-
-  margin: 0.5em;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-.form-group .input-control {
-   flex: 1 1 auto;
-   display: block;
 
-   margin-top: 10px; 
-   margin-bottom: 10px;
-   margin-right: 8px;
-   padding: 4px;
-
-   max-width: 30ch;
-}
-
-button {
-  padding: 5px 15px;
-  margin: 5px;
-
-  font-weight: bold;
-}
- 
- @media (max-width: 768px) {
-   .form-group {
-     flex-direction: column;
-   }
-   .form-group .input-control {
-     margin-top: 2px;
-   }
-   .form-group label.right-inline {
-     text-align: left;  
-     padding-right: 0;
-     padding-left: 0;   
-   }
-
-  /* Decorate the shop name */
-  h1 {
-    font-family: 'Roboto Slab', serif;
-
-    font-size: 3em;
-    text-shadow: 2px 2px skyblue;
-    font-variant: small-caps;
-    font-weight: 300;
-
-    margin: 0.5em;
-  }
-
-  /* Decorate the inviting message */
-  p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    color: white;
-    
-    margin: 1em;
-    text-align: center;
-  }
-}
-
-/* Mobile Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) { 
-
+/* Mobile Portrait and Landscape ********************/
+@media only screen and (max-device-width: 767px) { 
   .hero-image {
-    background-size: 100%  50%;
+    background-size: 100%  40vh;
     background-position: center top;
+  }  
+
+  .mwrapper_hero {
+    height: 30vh;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
-    
-   .wrapper {
-    min-height: 100vh;
-  } 
-  
-  
+
+  /* Release background image */
+  .con_background_image {
+    height: 80vh;
+  }
+ 
   /* Set contents position */
   .mwrapper section {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-  
-    margin: 30px;
   }
   
   /* Decorate the brand name */
   .mwrapper h1 {
-
     font-size: 3em;
     text-shadow: 2px 2px rgb(4, 56, 56);
   
@@ -342,11 +279,6 @@ button {
     flex-grow: 1;
   }
 
-  .flex_wrap_item {
-    padding: .5em;
-    margin: 1em;
-  }
-  
   .flex_wrap_item img {
     width: 25ch;
     height: 25ch;
@@ -354,76 +286,91 @@ button {
   }
   
   .flex_wrap_item figcaption {
-  
-    color: black;
-    font-family: 'Roboto', sans-serif;
     font-size: .7em;
   }
+
+  .flex_wrap_item footer {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  /* form specific formatting */
+  form {
+    text-align: center;
+  }
+
+  .form-group {
+    justify-content: center;
+
+    width:35ch;
+    margin: 0;
+  }
+  
+  legend {
+    font-size: .9em;
+  }
+
+  .form-group label {
+    size: 15ch;
+    font-size: .9em;
+  }
+
+  .form-group input {
+    width: 30ch;
+    margin: 5px;
+    padding-bottom: 3px;
+  }
+
+  /* Submit button */
+  .c_button {
+    background-color: goldenrod;
+    border-radius: 5%;
+    border: 1px solid rgb(2, 27, 27);
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
 }
 
 /* Tablet Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-
   .hero-image {
-    background-size: 100%  50%;
+    background-size: 100%  33vh;
     background-position: center top;
-  }
-    
-   .wrapper {
-    min-height: 80vh;
-  } 
-  
-  
-  /* Set contents position */
-  .mwrapper section {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  
-    margin: 15px;
-  }
-  
-  /* Decorate the brand name */
-  .mwrapper h1 {
-    font-size: 4em;
-    text-shadow: 2.5px 2.5px rgb(4, 56, 56);
-  
-    margin-top: 70px;
-  }
-  
-  /* Decorate description of the brand */
-  .mwrapper p {
-    font-size: .8em;
-  }
-  
-  .flex_wrap {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    flex-grow: 2;
+  }  
+
+  .mwrapper_hero {
+    height: 30vh;
+    margin-top: 25px;
+    margin-bottom: 0px;
   }
 
-  .flex_wrap_item {
-    padding: .5em;
-    margin: .5em;
+  /* Release background image */
+  .con_background_image {
+    height: 45vh;
   }
-  
-  .flex_wrap_item img {
-    width: 22ch;
-    height: 22ch;
-    padding-bottom: .5em;
-  }
-  
-  .flex_wrap_item figcaption {
-  
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: .8em;
-  }
-  
 }
 
+/* Tablet Portrait and Landscape */
+@media only screen and (min-device-width: 1025px) {
+  .hero-image {
+    background-size: 100%  40vh;
+    background-position: center top;
+  }  
 
+  .mwrapper_hero {
+    height: 30vh;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 
-/*****************************************************************************************/
-
+  /* Release background image */
+  .con_background_image {
+    height: 60vh;
+  }
+}
