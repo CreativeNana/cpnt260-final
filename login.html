@@ -80,6 +80,27 @@
       <footer class="footer">
         <script>document.write(new Date().getFullYear());</script> @ CreativeNana
       </footer>
+
+
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function SetPageView() {
+
+      }       
+  
+      function SetPageControl() {
+        $('#signUp').click(function(){
+          document.location.href = "register.html";
+        });
+
+      }     
+  
+      window.onload = function() {
+         SetPageView();
+         SetPageControl();
+
+      }
+    </script>
 </body>
 </html>
