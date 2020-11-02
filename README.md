@@ -4,5 +4,7 @@
 ### * github repo: https://github.com/CreativeNana/cpnt260-final
 ### * GH Pages website: https://creativenana.github.io/cpnt260-final/
 ### * Licence: PEXELS(https://www.pexels.com/), 
-### * Attributions
+### * Attributions: 
++	Colorlib : [Links]https://colorlib.com/wp/template/feliciano/
+
 
